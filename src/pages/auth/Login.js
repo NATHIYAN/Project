@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./auth.module.scss";
-import { BiLogIn } from "react-icons/bi";
+import { IoMdLogIn } from "react-icons/io";
 import Card from "../../components/card/Card";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -60,7 +60,7 @@ const Login = () => {
       <Card>
         <div className={styles.form}>
           <div className="--flex-center">
-            <BiLogIn size={35} color="#999" />
+            <IoMdLogIn size={35} color="#999" />
           </div>
           <h2>Login</h2>
 
@@ -89,7 +89,7 @@ const Login = () => {
 
           <span className={styles.register}>
             <Link to="/">Home</Link>
-            <p> &nbsp; Don't have an account? &nbsp;</p>
+            <p> &nbsp;| Don't have an account? &nbsp;</p>
             <Link to="/register">Register</Link>
           </span>
         </div>

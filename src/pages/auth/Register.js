@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./auth.module.scss";
-import { TiUserAddOutline } from "react-icons/ti";
+import { FiUserPlus } from "react-icons/fi";
 import Card from "../../components/card/Card";
 import { toast } from "react-toastify";
 import { registerUser, validateEmail } from "../../services/authService";
@@ -68,7 +68,7 @@ const Register = () => {
       <Card>
         <div className={styles.form}>
           <div className="--flex-center">
-            <TiUserAddOutline size={35} color="#999" />
+            <FiUserPlus size={35} color="#999" />
           </div>
           <h2>Register</h2>
 
@@ -112,7 +112,7 @@ const Register = () => {
 
           <span className={styles.register}>
             <Link to="/">Home</Link>
-            <p> &nbsp; Already have an account? &nbsp;</p>
+            <p> &nbsp;| Already have an account? &nbsp;</p>
             <Link to="/login">Login</Link>
           </span>
         </div>

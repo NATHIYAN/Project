@@ -1,5 +1,6 @@
 import { FaTh, FaRegChartBar, FaCommentAlt } from "react-icons/fa";
 import { BiImageAdd } from "react-icons/bi";
+import { LuUserSquare2 } from "react-icons/lu";
 
 const menu = [
   {
@@ -14,7 +15,7 @@ const menu = [
   },
   {
     title: "Account",
-    icon: <FaRegChartBar />,
+    icon: <LuUserSquare2 />,
     childrens: [
       {
         title: "Profile",
